@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Developers">
+        <menu>
+            <item
+                android:title="- 201111327_gilsoo"/>
+            <item
+                android:title="- 201111265_byungsoo"/>
+            <item
+                android:title="- 201011283_jihye"/>
+        </menu>
+    </item>
+
+    <item android:title="Q\u0026A">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="문의하기" />
+        </menu>
+    </item>
+
+</menu>

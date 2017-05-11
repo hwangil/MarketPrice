@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+            <TextView
+                android:text="땡땡시장"
+                android:id="@+id/marketName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <ToggleButton
+                android:id="@+id/favoriteToggleBtn"
+                android:checked="false"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/toggle_btnstyle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lowestCount"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="최저상품 : 10개"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

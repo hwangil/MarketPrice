@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:visible="true"
+        android:id="@+id/searchMarket"
+        android:orderInCategory="1"
+        android:title="검색"
+        app:showAsAction="always" />
+    <item
+        android:visible="false"
+        android:id="@+id/goMarket"
+        android:orderInCategory="1"
+        android:title="이동"
+        app:showAsAction="always"
+        />
+</menu>

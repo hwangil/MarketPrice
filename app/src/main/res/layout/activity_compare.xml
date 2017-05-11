@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#84f4fffe"
+    tools:context="com.example.gilsoo.marketprice.CompareActivity">
+    <include layout = "@layout/compare_toolbar_layout"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        >
+
+        <!--<ToggleButton-->
+        <!--android:textOn=""-->
+        <!--android:textOff=""-->
+        <!--android:background="@drawable/toggle_btnstyle"-->
+        <!--android:onClick="setSyncScrollBtn"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/productListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="6">
+
+            </ListView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/comparePrevBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/prev"
+                    android:onClick="onCompareBtn" />
+
+                <Button
+                    android:id="@+id/compareNextBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/next"
+                    android:onClick="onCompareBtn" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/floatingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            app:fabDrawable="@drawable/car"
+            app:fabGravity="bottom_start"
+            app:fabMenu="@menu/compare_menu"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="@color/colorPrimaryDark"
+            app:miniFabTitleTextColor="@color/colorPrimaryDark" />
+
+    </FrameLayout>
+</LinearLayout>

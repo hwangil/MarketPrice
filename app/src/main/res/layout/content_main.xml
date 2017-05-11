@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gilsoo.marketprice.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="#84f4fffe"
+    >
+    <!-- layout_behavior ?-->
+    <fragment
+        android:id="@+id/mapFrament"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        >
+
+    </fragment>
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <TextView
+        android:background="@drawable/border"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="선택된 시장"/>
+    <LinearLayout
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/selectMarketList"
+            android:choiceMode="singleChoice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:padding="2dp"
+            android:layout_weight="4"
+            android:background="@drawable/border"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="onGoFavoriteBtn"
+                android:backgroundTintMode="screen"
+                android:text="즐겨찾기"
+                android:textSize="27sp"
+                android:layout_gravity="left" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:onClick="onGoCompareBtn"
+                android:backgroundTintMode="screen"
+                android:text="비교하기"
+                android:textSize="27sp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

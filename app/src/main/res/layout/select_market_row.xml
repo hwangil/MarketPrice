@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="2dp"
+    >
+    <TextView
+        android:id="@+id/selectMarketText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="30sp"
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/delSelectMarket"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/x_icon"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+</LinearLayout>
