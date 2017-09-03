@@ -92,10 +92,12 @@ public class FindRoadDialog extends Dialog {
                     toast.show();
                     return;
                 }
-
-                MainActivity.getTmaptapi().invokeRoute(selectMarket.get(selectMarketPosition).getName()
-                        , (float) selectMarket.get(selectMarketPosition).getLng(), (float) selectMarket.get(selectMarketPosition).getLat());
                 Log.d("gilsoo", "lat,lng : " + selectMarket.get(selectMarketPosition).getName() + ", " + selectMarket.get(selectMarketPosition).getLat() + ", " + selectMarket.get(selectMarketPosition).getLng());
+                if(MainActivity.getTmaptapi().isTmapApplicationInstalled())
+                    MainActivity.getTmaptapi().invokeRoute(selectMarket.get(selectMarketPosition).getName()
+                            , (float) selectMarket.get(selectMarketPosition).getLng(), (float) selectMarket.get(selectMarketPosition).getLat());
+                else
+                    Toast.makeText(getContext(), "TMap 어플리케이션을 깔아주세요 ", Toast.LENGTH_SHORT).show();
 
             }
         });
