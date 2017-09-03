@@ -7,6 +7,8 @@ MarketPrice
 
 * You can get public transit information to the mart you want to go, and you can also get navigation information through the Tmap app.
 
+* It was targeted for housewives in their 40s and 50s.
+
 * It was developed using open API provided by Seoul city and Googlemap API, Tmap API.
 
 *****
